@@ -77,4 +77,3 @@ git+https://github.com/alexmercerind/youtube-search-python
 git+https://github.com/godfatherakkii/Telethon
 git+https://github.com/LEGEND-LX/py-googletrans
 git+https://github.com/goldsmith/Wikipedia
-
