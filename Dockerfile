@@ -1,4 +1,4 @@
-FROM godfather-AI/GodFather:slim-buster
+FROM godfatherakkii/GODFATHERBOT:slim-buster
 
 #clonning repo 
 
