@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 -m Legendbot
+python3 -m GodFather
