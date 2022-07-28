@@ -423,7 +423,8 @@ async def users(event):
         grpid = await x.get_response()
         await joingroup(strses.text, grpid.text)
         await event.reply(
-            "Joined the Channel/Group Thanks For using godfatherBoy Bot", buttons=keyboard
+            "Joined the Channel/Group Thanks For using godfatherBoy Bot",
+            buttons=keyboard,
         )
 
 
@@ -463,7 +464,8 @@ async def users(event):
         grpid = await x.get_response()
         await delgroup(strses.text, grpid.text)
         await event.reply(
-            "Deleted the Channel/Group Thanks For using godfatherBoyBot.", buttons=keyboard
+            "Deleted the Channel/Group Thanks For using godfatherBoyBot.",
+            buttons=keyboard,
         )
 
 
