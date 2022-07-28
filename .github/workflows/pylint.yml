@@ -27,9 +27,9 @@ jobs:
       # commit changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'legend fixed'
+          commit_message: 'godfather bot  fixed'
           commit_options: '--no-verify'
           repository: .
-          commit_user_name: LEGEND-AI
-          commit_user_email: Krishna045Jaiswal@gmail.com
-          commit_author: LEGEND-AI<Krishna045Jaiswal@gmail.com>
+          commit_user_name: godfatherakkii
+          commit_user_email: godfatherakkii@gmail.com
+          commit_author: godfatherakkii<godfatherakkii@gmail.com>
