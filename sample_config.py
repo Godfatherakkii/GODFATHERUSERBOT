@@ -25,11 +25,11 @@ class Config(object):
     TZ = os.environ.get("TZ", "Asia/Kolkata")
     # set this with required godfatherakkii repo link
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/godfatherakkii/GODFATHERUSERBOT"
+        "UPSTREAM_REPO", "https://github.com/LEGEND-LX/GODFATHERBOT"
     )
     EXTRA_REPO = os.environ.get("EXTRA_REPO", None)
     if EXTRA_REPO and (EXTRA_REPO.lower() != "no") and not url(EXTRA_REPO):
-        EXTRA_REPO = "https://github.com/godfatherakkii/PLUGINS"
+        EXTRA_REPO = "https://github.com/LEGEND-LX/PLUGINS"
     # Set this value with group id of private group(can be found this value by .id)
     PRIVATE_GROUP_BOT_API_ID = int(os.environ.get("PRIVATE_GROUP_BOT_API_ID") or 0)
     # Set this value same as PRIVATE_GROUP_BOT_API_ID if you need pmgaurd
