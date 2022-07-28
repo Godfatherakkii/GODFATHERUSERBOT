@@ -59,7 +59,7 @@ async def setup_bot():
         if Config.OWNER_ID == 0:
             Config.OWNER_ID = utils.get_peer_id(godfather.me)
     except Exception as e:
-        LOGS.error(f"godfather_STRING - {e}")
+        LOGS.error(f"GODFATHER_STRING - {e}")
         sys.exit()
 
 
@@ -70,7 +70,7 @@ async def startupmessage():
     is_sudo = "True" if Config.SUDO_USERS else "False"
     try:
         if BOTLOG:
-            Config.godfatherUBLOGO = await godfather.tgbot.send_file(
+            Config.GODFATHERUBLOGO = await godfather.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/294b4dbdb74334fb0a8c1.jpg",
                 caption=f"#START\n\n**__Version__**:- {godfatherversion}\n\n**__Sudo__** :- {is_sudo}\n\n**Your GodFather has been started successfully.**",
@@ -195,7 +195,7 @@ async def load_plugins(folder, extfolder=None):
 async def hekp():
     try:
         os.environ[
-            "godfather_STRING"
+            "GODFATHER_STRING"
         ] = "String Is A Sensitive Data \nSo Its Protected By GodFather"
     except Exception as e:
         print(str(e))
@@ -299,15 +299,15 @@ async def verifyLoggerGroup():
 
 
 async def install_extrarepo(repo, branch, efolder):
-    godfatherREPO = repo
-    if godfatherBRANCH := branch:
-        repourl = os.path.join(godfatherREPO, f"tree/{godfatherBRANCH}")
-        gcmd = f"git clone -b {godfatherBRANCH} {godfatherREPO} {efolder}"
-        errtext = f"There is no branch with name `{godfatherBRANCH}` in your external repo {godfatherREPO}. Recheck branch name and correct it in vars(`EXTRA_REPOBRANCH`)"
+    GODFATHERREPO = repo
+    if GODFATHERBRANCH := branch:
+        repourl = os.path.join(GODFATHERREPO, f"tree/{GODFATHERBRANCH}")
+        gcmd = f"git clone -b {GODFATHERBRANCH} {GODFATHERREPO} {efolder}"
+        errtext = f"There is no branch with name `{GODFATHERBRANCH}` in your external repo {GODFATHERREPO}. Recheck branch name and correct it in vars(`EXTRA_REPOBRANCH`)"
     else:
-        repourl = godfatherREPO
-        gcmd = f"git clone {godfatherREPO} {efolder}"
-        errtext = f"The link({godfatherREPO}) you provided for `EXTERNAL_REPO` in vars is invalid. please recheck that link"
+        repourl = GODFATHERREPO
+        gcmd = f"git clone {GODFATHERREPO} {efolder}"
+        errtext = f"The link({GODFATHERREPO}) you provided for `EXTERNAL_REPO` in vars is invalid. please recheck that link"
     response = urllib.request.urlopen(repourl)
     if response.code != 200:
         LOGS.error(errtext)
