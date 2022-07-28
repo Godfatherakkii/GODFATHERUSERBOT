@@ -12,7 +12,7 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "α • 2.1"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "godfatherBot <https://github.com/godfatherakkii/GODFATHERUSERBOT>"
+__author__ = "godfatherBot <https://github.com/LEGEND-LX/GODFATHERBOT>"
 __copyright__ = f"godfatherBot Copyright (C) 2020 - 2021  { __author__}"
 
 godfather.version = __version__
@@ -35,9 +35,9 @@ signal.signal(signal.SIGTERM, close_connection)
 
 
 if Config.UPSTREAM_REPO == "godfather":
-    UPSTREAM_REPO_URL = "https://github.com/godfatherakkii/GODFATHERUSERBOT"
+    UPSTREAM_REPO_URL = "https://github.com/LEGEND-LX/GODFATHERBOT"
 elif Config.UPSTREAM_REPO == "powerfull":
-    UPSTREAM_REPO_URL = "https://github.com/godfatherakkii/GODFATHERUSERBOT"
+    UPSTREAM_REPO_URL = "https://github.com/LEGEND-LX/GODFATHERUSERBOT"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
