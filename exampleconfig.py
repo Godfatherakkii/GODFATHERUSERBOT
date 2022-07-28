@@ -18,7 +18,7 @@ class Development(Config):
     # command hanler for sudo
     SUDO_HANDLER = "."
     # External plugins repo
-    EXTRA_REPO = "https://github.com/godfatherakki/PLUGINS"
+    EXTRA_REPO = "https://github.com/LEGEND-LX/PLUGINS"
     UPSTREAM_REPO = "godfather"
     # Your City's TimeZone
     TZ = "Your value"
