@@ -6,4 +6,4 @@ from ..core.inlinebot import *
 
 godfather_USER = godfather.me.first_name
 The_godfatherBoy = godfather.uid
-godfather_mention = f"[{godfather_USER}](tg://user?id={The_godfatherBoy})"
+godfather_mention = f"[{godfather_USER}](tg://user?id={The_godfatherBot})"
