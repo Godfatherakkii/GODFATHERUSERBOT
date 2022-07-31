@@ -47,12 +47,16 @@ async def startup_process():
         await load_plugins("plugins")
         await load_plugins("assistant")
         await killer()
-        print("----------------")
-        print("Starting Bot Mode!")
-        print("⚜ GodFather Has Been Deployed Successfully ⚜")
-        print("OWNER - @godfatherBoy_XD")
-        print("Group - @GodFather_XD")
-        print("----------------")
+        print(f"""『🔱GODFATHER-BOT🔱』➙𖤍࿐ IS ON!!! GODFATHER VERSION :- {godfatherversion}
+              TYPE :- " .gpromote @Godfatherakki" OR .help OR .ping CHECK IF I'M ON!
+                  ╔════❰GODFATHER-BOT❱═❍⊱❁۪۪
+                  ║┣⪼ OWNER - GODFATHER-AKKII
+                  ║┣⪼{godfather_PIC}
+                  ║┣⪼ CREATOR -@Godfatherakki
+                  ║┣⪼ TELETHON - 1.2.0
+                  ║┣⪼ ✨ 『🔱G O D F A T H E R🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
+                  ║╰━━━━━━━━━━━━━━━➣
+                  ╚══════════════════❍⊱""")
         await verifyLoggerGroup()
         await add_bot_to_logger_group(BOTLOG_CHATID)
         if PM_LOGGER_GROUP_ID != -100:
