@@ -10,8 +10,8 @@ __version__ = "1.10.6"
 
 loop = None
 
-if Config.godfather_STRING:
-    session = StringSession(str(Config.godfather_STRING))
+if Config.GODFATHERBOT_STRING:
+    session = StringSession(str(Config.GODFATHERBOT_STRING))
 else:
     session = "godfatherUserBot"
 
@@ -27,7 +27,7 @@ try:
         connection_retries=None,
     )
 except Exception as e:
-    print(f"godfather_STRING - {e}")
+    print(f"GODFATHERBOT_STRING - {e}")
     sys.exit()
 
 godfather.tgbot = tgbot = godfatherClient(
